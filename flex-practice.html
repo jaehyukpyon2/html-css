@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    #header {
+      background-color: dodgerblue;
+      flex-basis: 100px;
+      padding: 12px;
+
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      align-items: flex-end;      
+    }
+
+    #header > * {
+      background-color: yellow;
+      padding: 12px 0px;
+      text-align: center;
+    }
+
+    #header > *:first-child {
+      flex-basis: 100px;
+    }
+
+    #header > *:last-child {
+      flex-grow: 1;
+    }
+
+    #main {
+      flex-grow: 1;      
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #content {
+      padding: 24px;
+      background-color: lightgreen;
+    }
+
+    #footer {
+      background-color: tomato;
+      flex-basis: 60px;
+    }
+  </style>
+</head> 
+<body>
+  <div id="container">
+    <div id="header">
+      <div>로고</div>
+      <div>메뉴들</div>
+    </div>
+    <div id="main">
+      <div id="content">부모의 한가운데 배치</div>
+    </div>
+    <div id="footer">footer</div>
+  </div>
+  
+</body>
+</html>
