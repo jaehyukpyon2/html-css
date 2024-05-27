@@ -14,3 +14,10 @@ position
     - row이고, flex-wrap이 wrap일 경우, align-content가 기본값인 stretch가 아닌 다른 값이 적용되어 있다면, align-items를 건들여도 적용되지 않는다. 
     - nowrap일 경우, align-content가 안 먹는다
     - wrap이고, align-content가 stretch가 아닐 경우, align-items를 변경해도 안 먹는다 
+
+
+block요소는 width 값을 주지 않으면 기본적으로 부모 요소의 가로 사이즈를 꽉 채워서 들어간다.
+
+first-child => 무조건 '맨 앞'에 있어야 한다.
+div p:first-child 일 경우, 이렇게 되어 있다고 해도 적용 안 된다.
+<div><h5></h5><p></p><p></p></div>

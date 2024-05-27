@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+    .container {
+      background: #eee;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0px;
+    }
+    .wrapper {
+      width: 620px;
+      padding: 40px 30px;
+      background-color: white;
+      border: 1px solid gray;
+      border-radius: 10px;
+    }
+    .wrapper__head {
+      /* background: red; */
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px dashed gray;
+    }
+    .wrapper__head__title {
+      font-size: 32px;
+      background-color: orange;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .wrapper__head__sub-title {
+      font-size: 18px;
+      padding: 10px 0;
+    }
+    #point {
+      color: orange;
+      font-size: 22px;
+      font-weight: bold;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="wrapper__head">
+        <h1 class="wrapper__head__title">
+          나만의 일기장
+        </h1>
+        <p class="wrapper__head__sub-title">
+          나만의 일기장입니다!<br/>
+          원하는 색과 사이즈로 일기장을 커스텀해보세요.<br />
+          <span id="point">
+            Have a Good Day!
+          </span>
+        </p>
+      </div>
+      <div class="wrapper__body">
+        <div class="wrapper__body__content">
+          <p class="diary-title">
+            OOO의 일기
+          </p>
+          <p>
+            오늘은 <span class="kimchi">~~~을 했다.</span>으하하하하<br />
+            으아오예 히히히 흐흐흐 크크크 내용내용입니다.<br />
+            본문 <span class="highlight">마지막줄 입니다!!</span>
+          </p>
+          <p class="diary-date">
+            2022년 7월 5일<br/>
+            날씨 흐림
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
