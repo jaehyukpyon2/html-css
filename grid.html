@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      /* box-sizing: border-box; */
+      list-style-type: none;
+    }
+    .container {
+      display: inline-grid;
+      height: 500px;
+      /* grid-item과 gap 영역까지 총 합쳐서 500px 안에 들어감 */
+      grid-template-columns: 100px 100px; 
+      /* grid-item 한 개의 margin 공간까지 다 합쳐서 100px */
+      gap: 5px 15px;
+      /* 왼쪽에서 오른쪽으로 가로지르는 gap,
+      위에서 아래로 가로지르는 gap */
+    }
+    .item {
+      margin: 10px;
+    }
+    .item:nth-child(2n) {
+      border: 1px solid red;
+    }
+    .item:nth-child(2n + 1) {
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <ul class="container">
+    <li class="item">01</li>
+    <li class="item">02</li>
+    <li class="item">03</li>
+    <li class="item">04</li>
+    <li class="item">05</li>
+    <li class="item">06</li>
+    <li class="item">07</li>
+    <li class="item">08</li>
+    <li class="item">09</li>
+    <li class="item">10</li>
+  </ul>
+</body>
+</html>
