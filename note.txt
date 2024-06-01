@@ -14,6 +14,8 @@ position
     - row이고, flex-wrap이 wrap일 경우, align-content가 기본값인 stretch가 아닌 다른 값이 적용되어 있다면, align-items를 건들여도 적용되지 않는다. 
     - nowrap일 경우, align-content가 안 먹는다
     - wrap이고, align-content가 stretch가 아닐 경우, align-items를 변경해도 안 먹는다 
+- flex-directio 이 row이면, flex-item들에 width가 설정되어 있지 않다면, flex-item에 채워져 있는 content 영역만큼만 width를 차지하도록 변경된다. 
+    - 만약 column이라면, width는 부모 컨테이너에 꽉 찬다.
 
 
 block요소는 width 값을 주지 않으면 기본적으로 부모 요소의 가로 사이즈를 꽉 채워서 들어간다.
@@ -22,6 +24,12 @@ first-child => 무조건 '맨 앞'에 있어야 한다.
 div p:first-child 일 경우, 이렇게 되어 있다고 해도 적용 안 된다.
 <div><h5></h5><p></p><p></p></div>
 
+<<<<<<< HEAD
 
 
 container에 display flex를 적용하고 높이를 주면,, 바로 아래 자식 태그(flex-item)의 높이도 그 부모에게 준 height와 동일
+=======
+flex-item에 적용되는 flex-basis의 크기 보다, 그냥 flex-item에 적용된 width 속성의 크기가 더 커도 무시되고 flex-basis에 적용된 크기 값이 적용
+
+box-sizing이 border-box일 경우, flex-basis에 적용된 값이 border + padding + content width 까지 포함되어서 계산된다. 
+>>>>>>> 08b69cba6db00e1ff1c277785b1022c3d8bb5c54
