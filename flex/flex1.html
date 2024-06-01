@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    a {
+      color: black;
+    }
+    .header {
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid gray;
+    }
+    .header-inner {
+      background-color: red;
+      width: 900px;
+      height: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      background-color: blue;
+      width: 100px;
+    }
+    .menu {
+      background-color: yellow;
+    }
+    .menu__ul {
+      display: flex;
+      flex-direction: row;
+    }
+    .menu__ul li {
+      list-style: none;
+    }
+    .menu__ul li a {
+      display: block;
+      padding: 10px 20px;
+    }
+    .user {
+      background-color: green;
+      width: 100px;
+    }
+    #div1 {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+        <div class="logo">
+            <h1><a href="#none">HAGD</a></h1>
+        </div>
+        <div class="menu">
+            <ul class="menu__ul">
+                <li>
+                    <a href="#none">어제의 일기</a>
+                </li>
+                <li>
+                    <a href="#none">오늘의 일기</a>
+                </li>
+                <li>
+                    <a href="#none">내일의 일기</a>
+                </li>
+            </ul>
+        </div>
+        <div class="user">
+            <img src="./portrait.png" alt="유저 정보" width="32" height="32">
+        </div>
+    </div>
+</header>
+<!-- <div id="div1">
+  <div>asdfads</div>
+</div> -->
+</body>
+</html>

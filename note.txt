@@ -21,3 +21,7 @@ block요소는 width 값을 주지 않으면 기본적으로 부모 요소의 �
 first-child => 무조건 '맨 앞'에 있어야 한다.
 div p:first-child 일 경우, 이렇게 되어 있다고 해도 적용 안 된다.
 <div><h5></h5><p></p><p></p></div>
+
+
+
+container에 display flex를 적용하고 높이를 주면,, 바로 아래 자식 태그(flex-item)의 높이도 그 부모에게 준 height와 동일
