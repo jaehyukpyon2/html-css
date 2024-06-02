@@ -1,0 +1,2 @@
+grid-template-columns 에서 auto를 주면, 남은 공간을 모두 차지하고
+grid-template-rows에서 auto를 주면, 콘텐츠가 들어갈 만큼의 높이만큼만 차지하게 된다. 

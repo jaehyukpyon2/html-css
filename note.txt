@@ -24,12 +24,10 @@ first-child => 무조건 '맨 앞'에 있어야 한다.
 div p:first-child 일 경우, 이렇게 되어 있다고 해도 적용 안 된다.
 <div><h5></h5><p></p><p></p></div>
 
-<<<<<<< HEAD
-
-
 container에 display flex를 적용하고 높이를 주면,, 바로 아래 자식 태그(flex-item)의 높이도 그 부모에게 준 height와 동일
-=======
+
 flex-item에 적용되는 flex-basis의 크기 보다, 그냥 flex-item에 적용된 width 속성의 크기가 더 커도 무시되고 flex-basis에 적용된 크기 값이 적용
 
 box-sizing이 border-box일 경우, flex-basis에 적용된 값이 border + padding + content width 까지 포함되어서 계산된다. 
->>>>>>> 08b69cba6db00e1ff1c277785b1022c3d8bb5c54
+
+

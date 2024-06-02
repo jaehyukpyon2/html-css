@@ -6,48 +6,25 @@
   <title>Document</title>
 
   <style>
-    /* 요소를 8개 이상 추가하면,  */
     .container {
-      margin: 20px;
       display: grid;
       height: 500px;
       grid-template-columns: repeat(4, 25%);
-      /* grid-template-rows: 5rem minmax(10px, auto) 100px; */
-      grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] 130px [row-2-end row-start-staart] fit-content(8rem) [row-3-end];
-      gap: 10px;
-      /* height: 500px 값 즉 gap을 포함한 height 값이 500px */
+      grid-template-rows: fit-content(8rem);
     }
-
     .el1 {
       background-color: lightblue;
     }
-
     .el2 {
       background-color: lightcoral;
-      grid-column-start: 1;
-      grid-column-end: -1;
     }
-
-    .el3 {
-      background-color: lightgreen;
-      grid-column-start: 2;
-      grid-column-end: -1;
-      grid-row-start: 1;
-      grid-row-end: 3;
-    }
-
-    .el4 {
-      background-color: blueviolet;
-    }
-
-    /* .el5 {
-      background-color: yellow;
-    } */
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="el1">Element 1</div>
+    <div class="el1">
+      <!-- <div style="height: 9rem;">asdf</div> -->
+    </div>
     <div class="el2">Element 2</div>
     <div class="el3">Element 3</div>
     <div class="el4">Element 4</div>
@@ -58,8 +35,5 @@
     <div class="el9">Element 9</div>
     <div class="el10">Element 10</div> -->
   </div>
-  <h1 style="margin: 0px;">
-    Below
-  </h1>
 </body>
 </html>
